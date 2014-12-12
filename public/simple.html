@@ -1,10 +1,15 @@
 <html>
+	<head>
 	<script>
+	function logData(){
+		console.log("hello");
 		var firstName = document.getElementById("firstname").value;
 		var lastName = document.getElementById("lastname").value;
-		console.log(firstname);
-		console.log(lastname);
+		console.log(firstName);
+		console.log(lastName);
+	}
 	</script>
+</head>
 <body>
 
 	<form>
@@ -14,7 +19,7 @@
 		Last name:<br>
 		<input type="text" name="lastname">
 		<br><br>
-		<input type="submit" value="Submit">
+		<input type="submit" value="Submit" onclick="return logData()" >
 	</form>
 </body>
 </html>
