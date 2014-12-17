@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+console.log('js loaded');
+function get_action() { // inside script tags
+  return "thanks.html";
+}
+
+</script>
+
+<p>If you click "Submit", the form-data will be sent to something called 'submission.js'...uh what is submission.js?</p>
+
+<form action="" onsubmit="this.action=get_action();">
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+
+
+
+</body>
+</html>
