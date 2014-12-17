@@ -3,15 +3,13 @@
 <body>
 <script>
 console.log('js loaded');
-function get_action() { // inside script tags
-  return "thanks.html";
 }
 
 </script>
 
 <p>If you click "Submit", the form-data will be sent to something called 'submission.js'...uh what is submission.js?</p>
 
-<form action="get_action();" onsubmit="this.action=get_action();">
+<form action="thanks.html">
 First name:<br>
 <input type="text" name="firstname">
 <br>
